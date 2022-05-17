@@ -1,0 +1,186 @@
+@import "./header.css";
+@import "./userprofile.css";
+@import "./moviesdetails.css";
+@import "./loginform.css";
+@import "./footer.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: rgb(22, 46, 174);
+  background: #251e31;
+  background-image: url("../cine.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(181, 181, 181);
+  border-radius: 10px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  color: white;
+}
+p {
+  color: white;
+  margin: 0;
+}
+h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+/* ---------------MOVIES AND CONTAINER MOVIES */
+
+.container-movies {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.container-movies a {
+  border-radius: 2px;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 15px 15px 0 0;
+}
+
+.container-movies div a {
+  margin: 15px 15px 0 0;
+}
+
+.movie-title {
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrouselMovies {
+  display: flex;
+  overflow-x: scroll;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  /* max-height: 450px; */
+  /* border: 2px solid blue; */
+}
+
+.cardMovie {
+  position: relative;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: #051049;
+}
+
+.cardMovie img {
+  height: 300px;
+  width: 200px;
+  border-radius: 2px;
+}
+
+.title-container {
+  height: 70px;
+}
+
+.cardMovie:hover .hoverinfo {
+  visibility: visible;
+  transition: 0.5 all;
+}
+
+.hoverinfo {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(5, 16, 73, 1) 80%
+  );
+  /* width: 100%; */
+  border-radius: 10px;
+  width: 180px;
+  visibility: hidden;
+  transition: 0.5 all;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.starIcon {
+  color: yellow;
+  margin-right: 10px;
+}
+
+/* HOME --------- HERO HOME  */
+
+.herohome {
+  height: 250px;
+  background-image: url("../s-tsuchiya--BoYvgZlbpo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herohome {
+  padding: 40px;
+  font-family: "roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herohome h1 {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.home-content-container h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding-left: 100px;
+}
+
+@media (max-width: 800px) {
+  .home-content-container h2 {
+    color: white;
+    font-size: 1.7rem;
+    text-align: start;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    padding-left: 20px;
+  }
+  .herohome h1 {
+    font-size: 4rem;
+  }
+  .container-movies {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+}

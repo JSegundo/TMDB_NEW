@@ -1,0 +1,81 @@
+.movieDetailsPage {
+  display: flex;
+  height: calc(100vh - 252px);
+}
+
+.fondo-movie-card {
+  width: 100%;
+  /* z-index: -100; */
+}
+
+.releaseDate {
+  color: grey;
+}
+.tagline {
+  color: white;
+}
+
+.genres {
+  display: flex;
+}
+.genres div {
+  margin-right: 10px;
+  color: white;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions svg {
+  margin: 10px 10px 0 0;
+}
+
+.singlemovieposter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 40px;
+}
+
+.header-poster {
+  padding: 30px;
+  width: 60%;
+}
+.singlemovieposter img {
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+.favoriteIcon-fav {
+  color: #051049;
+}
+
+.favoriteIcon-notfav {
+  color: white;
+}
+
+.iconoPlayTrailer:hover {
+  transform: scale(1.3);
+  transition: 0.4s all;
+  color: #051049;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .movieDetailsPage {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .genres {
+    flex-direction: column;
+  }
+  .singlemovieposter {
+    width: 100%;
+  }
+
+  .header-poster {
+    width: 80%;
+  }
+}

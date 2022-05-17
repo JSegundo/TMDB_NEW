@@ -1,0 +1,88 @@
+.containerLoginForm {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  height: calc(100vh - 400px);
+}
+
+.containerLoginForm form {
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 100px;
+  min-height: 300px;
+  border: 2px solid #070a1b;
+  border-radius: 12px;
+  /* background-color: #051049; */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.containerLoginForm form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.containerLoginForm form label {
+  color: white;
+  margin: 10px 0;
+}
+
+.containerLoginForm form input {
+  max-width: 800px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.loginbtn {
+  margin-bottom: 10px;
+  width: fit-content;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: 2px solid #051049;
+  background-color: #070a1b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.registerbtn {
+  border: 2px solid #051049;
+  background-color: #070a1b;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  height: fit-content;
+  cursor: pointer;
+  /* margin: 10px 0; */
+}
+
+.registerbtn p {
+  margin: 0;
+}
+
+.container-buttons {
+  margin-top: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+@media screen and (max-width: 1000px) {
+  .containerLoginForm form {
+    width: 70%;
+    /* width: fit-content; */
+  }
+}
